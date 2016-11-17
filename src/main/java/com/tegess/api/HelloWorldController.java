@@ -13,4 +13,9 @@ public class HelloWorldController {
     public HelloWorld helloWorld() {
         return new HelloWorld("Szymek");
     }
+
+    @RequestMapping(value = "/secureHelloWorld", method = RequestMethod.GET)
+    public HelloWorld secureHelloWorld() {
+        return new HelloWorld("Secure Szymek");
+    }
 }
